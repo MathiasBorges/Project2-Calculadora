@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<script src="JScalc.js"></script>
+	<link rel="stylesheet" type="text/css" href="calcStyle.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora</title>
+</head>
+<body>
+	<header style="color:indianred; margin: 0;font-family: arial;">Desenvolvido por: Mathias B. Marques</header>
+	<div class="conteiner">
+		<hearder id="cabec" style="color:white; font-family: cursive; font-size: 40px;">Calculadora</hearder>
+		<div class="suporte">
+			<header class="result"><p id="result"></p></header>
+			<!-- Números-->
+			<div class="numbers">
+				<button id="n1" onclick="insira('1')">1</button>
+				<button id="n2" onclick="insira('2')">2</button>
+				<button id="n3" onclick="insira('3')">3</button>
+				<button id="n4" onclick="insira('4')">4</button>
+				<button id="n5" onclick="insira('5')">5</button>
+				<button id="n6" onclick="insira('6')">6</button>
+				<button id="n7" onclick="insira('7')">7</button>
+				<button id="n8" onclick="insira('8')">8</button>
+				<button id="n9" onclick="insira('9')">9</button>
+				<button class="float" onclick="insira('.')">.</button>
+				<button class="n0" onclick="insira('0')">0</button>
+				<button class="eleva" onclick="insira('**')">^</button>
+			<!-- Números-->
+			</div>
+			<!-- operações-->
+			<div class="operations">
+				<button class="o1" onclick="insira('+')"> +</button>
+				<button class="o2" onclick="insira('-')"> -</button>
+				<button class="o3" onclick="insira('*')"> *</button>
+				<button class="o4" onclick="insira('/')"> /</button>
+				<button class="o5" onclick="insira('/100')"> % </button>
+				<button class="o6" onclick="insira('**(1/2)')">√</button>
+				<button class="equal" style="width:10vw; color: black;" onclick="calcular()">=</button>	
+			</div>
+			<!--apaga-limpa -->
+			<div class="teclas">
+				<button onclick="clean()">C</button>
+				<button onclick="back()">X</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
