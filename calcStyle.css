@@ -3,6 +3,8 @@ body{
 	margin: 0;
 	background: #261428;
 	overflow-y: hidden;
+width:100vw;
+height:100vh;
 }
 .conteiner{
 	margin: 0; 
